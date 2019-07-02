@@ -15,11 +15,22 @@
         <!-- Fonts -->
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/0371f381a6.js"></script>
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        @include('layouts.partials._custom-css')
+
+        {{-- Opens the Contact Form Once the Hire Me Button is Clicked --}}
+        <script>
+            function openContactForm() {
+                document.getElementById('contact-title').innerHTML = "Hire Me!";
+                $('.wrap-contact100').fadeIn(400);
+            }
+        </script>
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".spyOnThis" data-offset="300">
         @yield('content')
+        @include('layouts.partials._custom-js')
     </body>
 </html>        

@@ -21,7 +21,7 @@ body, html {
 }
 
 .hero-image {
-  background-image: url("../storage/dev-bg.jpeg");
+  background-image: url("../../storage/local_assets/backgrounds/dev-bg.jpeg");
   height: 80%;
   background-position: center;
   background-repeat: no-repeat;
