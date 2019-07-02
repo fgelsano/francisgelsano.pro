@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index')->name('admin');
+Route::get('file','FileController@create');
+Route::post('file','FileController@store');

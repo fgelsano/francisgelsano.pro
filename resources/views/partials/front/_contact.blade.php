@@ -1,7 +1,7 @@
 <div class="container-contact100" id="contact">
     <div class="contact100-map" id="google_map" data-map-x="10.334827" data-map-y="123.895708" data-pin="{{ asset('storage/local_assets/icons/map-marker.png')}}" data-scrollwhell="0" data-draggable="1"></div>
 
-    <button class="contact100-btn-show">
+    <button class="contact100-btn-show" data-aos="zoom-in">
         <i class="fas fa-envelope"></i>
     </button>
 

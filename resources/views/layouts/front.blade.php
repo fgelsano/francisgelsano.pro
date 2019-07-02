@@ -19,7 +19,10 @@
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        @include('layouts.partials._custom-css')
+        @include('layouts.partials.front._custom-css')
+
+        {{-- AOS CSS --}}
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         {{-- Opens the Contact Form Once the Hire Me Button is Clicked --}}
         <script>
@@ -29,8 +32,9 @@
             }
         </script>
     </head>
+
     <body data-spy="scroll" data-target=".spyOnThis" data-offset="300">
         @yield('content')
-        @include('layouts.partials._custom-js')
+        @include('layouts.partials.front._custom-js')
     </body>
 </html>        

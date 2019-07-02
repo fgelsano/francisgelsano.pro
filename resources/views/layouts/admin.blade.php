@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" href="{{ asset('storage/local_assets/icons/mylogo.ico')}}" type="image/x-icon">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -18,13 +19,24 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    {{-- TinyMCE Plugin for the TextArea --}}
+    <script src="https://cdn.tiny.cloud/1/1tni1s14cb8aq36ucv48pqfcbd8fr74h1xu0cp1c3ceov61x/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '.customTextArea',
+        });
+    </script>
+
+    {{-- Custom CSS Files --}}
+    @include('layouts.partials.admin._custom-css')
 </head>
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    <img src="{{ asset('storage/local_assets/icons/mylogo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="mylogo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -67,9 +79,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <div class="container mt-3">
             @yield('content')
-        </main>
+        </div>
     </div>
+
+    {{-- Custom JS --}}
+    @include('layouts.partials.admin._custom-js')
 </body>
 </html>

@@ -4,7 +4,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('storage/local_assets/icons/mylogo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="">
+            <img src="{{ asset('storage/local_assets/icons/mylogo.png')}}" width="30" height="30" class="d-inline-block align-top" alt="mylogo">
             &nbsp; Francis Gelsano
         </a>
 
