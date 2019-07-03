@@ -1,4 +1,4 @@
-<div class="tab-pane fade show active" id="hero" role="tabpanel" aria-labelledby="home-tab">
+<div class="tab-pane fade show active" id="hero" role="tabpanel" aria-labelledby="hero-tab">
     <div class="row">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <h4>Edit Hero Text Here</h4>
@@ -9,14 +9,12 @@
             </textarea>
         </div>
     </div>
-    <div class="row mt-3">
-        <label for="imageSelector" id="imageSelectorId" class="col-12">
-            <div class="row" id="imageSelectorRow">
-                <div id="imageSelectorContainer">Click or Drop the Image Here</div>
-            </div>
-            <input type="file" id="imageSelector">
-        </label>
-        <p id="filename">Test</p>
+    <div class="row mt-3 p-3">
+        <div class="file-drop-area col-12">
+            <span class="fake-btn">Choose files</span>
+            <span class="file-msg">or drag and drop files here</span>
+            <input class="file-input" type="file" multiple>
+        </div>
     </div>
     <div id="preview" class="mt-3">
         <h4>Preview:</h4>

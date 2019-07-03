@@ -16,6 +16,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0371f381a6.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,6 +26,7 @@
     <script>
         tinymce.init({
             selector: '.customTextArea',
+            height: 450
         });
     </script>
 
@@ -86,5 +88,6 @@
 
     {{-- Custom JS --}}
     @include('layouts.partials.admin._custom-js')
+    @include('layouts.partials._footer')
 </body>
 </html>
