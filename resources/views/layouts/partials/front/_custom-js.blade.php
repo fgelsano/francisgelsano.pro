@@ -10,6 +10,7 @@
 <script src="{{asset('js/custom/map-custom.js')}}"></script>
 <script src="{{asset('js/custom/main.js')}}"></script>
 <script src="{{asset('js/custom/script.js')}}"></script>
+<script src="{{asset('js/custom/lightbox-plus-jquery.min.js')}}"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>
