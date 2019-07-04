@@ -13,7 +13,28 @@
         <p>After I graduated high school, my parents couldn't send me to college due to financial reasons. So just to get into college, I grabbed any possible scholarship I could get. I happen to get a course related to computer and not just any computer-related course. It's a computer programming course. That's how I found out about my skills and passion towards programming.</p>
         <p>That's how everything started and the rest is history...</p></br>
         
-        <a href="{{ asset('storage/MyResume.pdf')}}" class="btn btn-success mt-2 hvr-ripple-out" target="_blank">Download a PDF Copy of my Resume</a>
+        <div class="row d-flex">
+            <div class="col-12 col-sm-12 col-md-6 align-self-center">
+                <a href="{{ asset('storage/MyResume.pdf')}}" class="btn btn-success mt-2 hvr-ripple-out" target="_blank">Download a PDF Copy of my Resume</a>
+            </div> 
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+                <a href=""><i class="social-media fab fa-facebook"></i></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+                <a href=""><i class="social-media fab fa-twitter"></i></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+                <a href=""><i class="social-media fab fa-linkedin"></i></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+                <a href=""><i class="social-media fab fa-youtube"></i></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+                <a href=""><i class="social-media fab fa-github"></i></a>
+            </div>
+            <div class="col-4 col-sm-4 col-md-1 align-self-center">
+            </div>
+        </div>
         </div>
     </div>
     <br>

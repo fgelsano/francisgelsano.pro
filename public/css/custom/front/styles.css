@@ -389,3 +389,13 @@ img.hover-shadow {
   color: #fff;
   border-bottom: 4px solid #fff !important;
 }
+
+.social-media{
+  color: black;
+  font-size: 32px;
+}
+
+.social-media:hover{
+  color: deepskyblue;
+  font-size: 32px;
+}
