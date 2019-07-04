@@ -10,11 +10,24 @@
         </div>
     </div>
     <div class="row mt-3 p-3">
-        <div class="file-drop-area col-12">
+        <div class="file-drop-area col-12 col-sm-12 col-md-6">
             <span class="fake-btn">Choose files</span>
             <span class="file-msg">or drag and drop files here</span>
             <input class="file-input" type="file" multiple>
         </div>
+        <div class="form-group col-12 col-sm-12 col-md-6">
+            <input type="text" name="" id="" placeholder="Facebook Profile URL" class="form-control mt-1">
+            <input type="text" name="" id="" placeholder="Twitter Profile URL" class="form-control mt-1">
+            <input type="text" name="" id="" placeholder="LinkedIn Profile URL" class="form-control mt-1">
+            <input type="text" name="" id="" placeholder="YouTube Profile URL" class="form-control mt-1">
+            <input type="text" name="" id="" placeholder="GitHub Profile URL" class="form-control mt-1">
+        </div>
+    </div>
+    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top
+    </button>
+    <div class="row p-3">
+        <input type="submit" value="Save" class="btn btn-lg btn-block btn-success">
     </div>
     <div id="preview" class="mt-3">
         <h4>Preview:</h4>
