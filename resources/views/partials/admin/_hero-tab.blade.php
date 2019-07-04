@@ -23,9 +23,6 @@
             <input type="text" name="" id="" placeholder="GitHub Profile URL" class="form-control mt-1">
         </div>
     </div>
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-        Tooltip on top
-    </button>
     <div class="row p-3">
         <input type="submit" value="Save" class="btn btn-lg btn-block btn-success">
     </div>
