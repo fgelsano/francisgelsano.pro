@@ -12,7 +12,7 @@
     <div class="row mt-3 p-3">
         <div class="file-drop-area col-12 col-sm-12 col-md-6">
             <span class="fake-btn">Choose files</span>
-            <span class="file-msg">or drag and drop files here</span>
+            <span class="file-msg">or drag and drop Background Image here</span>
             <input class="file-input" type="file" multiple>
         </div>
         <div class="form-group col-12 col-sm-12 col-md-6">
