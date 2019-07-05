@@ -34,7 +34,19 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'     =>  'required',
+            'body'      =>  'required|min:150',
+            'category'  =>  'required'
+        ]);
+
+        $blog = new Blog([
+            'title'     =>  $request->get('blogTitle'),
+            'body'      =>  $request->get('blogBodyTextArea'),
+            'category'  =>  $request->get('category'),
+        ]);
+        $blog->save();
+        return redirect('admin')->with('Success','Blog successfully added!');
     }
 
     /**

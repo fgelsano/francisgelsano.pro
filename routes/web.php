@@ -17,7 +17,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('admin');
-Route::get('file','FileController@create');
-Route::post('file','FileController@store');
-Route::resource('blogs', 'BlogController');
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

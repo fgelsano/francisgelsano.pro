@@ -175,6 +175,12 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+        *  Voyager Package
+        */ 
+        TCG\Voyager\VoyagerServiceProvider::class,
+	    Intervention\Image\ImageServiceProvider::class,
+
     ],
 
     /*
